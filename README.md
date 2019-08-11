@@ -2,7 +2,7 @@
 🌵给编程小白的免费RESTful API测试接口
 
 # 前言
-受https://jsonplaceholder.typicode.com 项目启发，想要做一个免费的Restful API接口帮助编程初学者用来测试自己的城市，因为我当时刚开始学编程的时候就对没有免费的Restful API帮助深感苦恼，其实这个项目好几个星期前就想做了，苦于工作时间还有杂七杂八的事情导致一直搁置，所以现在打算一点一点来，先出一个小的版本，让大家试验，如果有任何问题可以发到我邮箱zhaoweihao.dev@gmail.com或者提issues。
+受https://jsonplaceholder.typicode.com 项目启发，想要做一个免费的Restful API接口帮助编程初学者用来测试自己的程式，因为我当时刚开始学编程的时候就对没有免费的Restful API帮助深感苦恼，其实这个项目好几个星期前就想做了，苦于工作时间还有杂七杂八的事情导致一直搁置，所以现在打算一点一点来，先出一个小的版本，让大家试验，如果有任何问题可以发到我邮箱zhaoweihao.dev@gmail.com或者提issues。
 
 # hostname
 
