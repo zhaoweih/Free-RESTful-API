@@ -7,10 +7,10 @@
 # 域名
 
 亚洲[新加坡服务器]: https://sg.zhaoweihao.icu/api   
-例如请求连接是/zoos，完整请求连接应该是https://sg.zhaoweihao.icu/api/zoos
+例如请求连接是`/zoos`，完整请求连接应该是https://sg.zhaoweihao.icu/api/zoos
 
 
-# 食用方法
+# 使用方法
 
 ## 1.GET方法
 ### 1.1列出所有动物园
@@ -25,6 +25,11 @@
 
 所有参数可以都添加，例如：  
 `/zoos?page=2&per_page=2&limit=1&offset=1`
+
+请求示例：
+```bash
+curl https://sg.zhaoweihao.icu/api/zoos
+```
 
 返回数据参考：
 ```json
@@ -55,11 +60,18 @@
         }
     ]
 }
+
 ```
 
 ### 1.2获取某个指定动物园的信息
 请求连接：  
 `/zoos/ID`
+
+请求示例：  
+
+```bash
+curl https://sg.zhaoweihao.icu/api/zoos/5d35c8154c7fd837087d8a09
+```
 
 请求成功返回例子：
 ```json
@@ -81,9 +93,14 @@
 请求连接：  
 `/zoos`
 
-Body参数：  
+参数：  
 name 动物园名字，例如ShenZhen zoo  
 location 动物园位置, 例如ShenZhen
+
+请求示例：
+```bash
+curl -d "name=shenzhen zoos 11&location=shenzhen 11" -X POST https://sg.zhaoweihao.icu/api/zoos
+```
 
 请求成功返回例子：
 ```json
@@ -102,9 +119,14 @@ location 动物园位置, 例如ShenZhen
 请求连接：  
 `/zoos/ID`
 
-Body参数：  
+参数：  
 name 动物园名字，例如ShenZhen zoo11  
 location 动物园位置, 例如ShenZhen11
+
+请求示例：
+```bash
+curl -d "name=shenzhen zoos 12&location=shenzhen 12" -X PUT https://sg.zhaoweihao.icu/api/zoos/5d51873a225f965c0406bedd
+```
 
 请求成功返回示例：
 ```json
@@ -123,9 +145,14 @@ location 动物园位置, 例如ShenZhen11
 请求连接：  
 `/zoos/ID`
 
-Body参数(可选，无需全部提供)：  
+参数(可选，无需全部提供)：  
 name 动物园名字，例如ShenZhen zoo12  
 location 动物园位置, 例如ShenZhen12
+
+请求示例：
+```bash
+curl -d "name=shenzhen zoos 13" -X PATCH https://sg.zhaoweihao.icu/api/zoos/5d51873a225f965c0406bedd
+```
 
 请求成功返回示例：
 ```json
@@ -142,6 +169,11 @@ location 动物园位置, 例如ShenZhen12
 ### 5.1删除某个动物园
 请求连接：  
 `/zoos/ID`
+
+请求示例：
+```bash
+curl -X DELETE https://sg.zhaoweihao.icu/api/zoos/5d51873a225f965c0406bedd
+```
 
 请求成功返回示例：
 ```json
